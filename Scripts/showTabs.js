@@ -3,49 +3,49 @@ let linkHash = window.location.hash;
 $(document).ready(function(){
     $(".buttons .login").click(function(e){
         e.preventDefault()
-        document.location.href = "../Pages/Login_Page.html"
+        document.location.href = "./Pages/Login_Page.html"
         window.scrollTo(0, 0)
     })
 
     $(".buttons .signup").click(function(e){
         e.preventDefault()
-        document.location.href = "../Pages/Registration_Page.html"
+        document.location.href = "./Pages/Registration_Page.html"
         window.scrollTo(0, 0)
     })
 
     $(".goToStudent").click(function(e){
         e.preventDefault()
-        document.location.href = "../Pages/Student_Dashboard.html"
+        document.location.href = "./Pages/Student_Dashboard.html"
         window.scrollTo(0, 0)
     })
 
     $(".goToTeacher").click(function(e){
         e.preventDefault()
-        document.location.href = "../Pages/Teacher_Dashboard.html"
+        document.location.href = "./Pages/Teacher_Dashboard.html"
         window.scrollTo(0, 0)
     })
 
     $(".enrollBtn").click(function(e){
         e.preventDefault()
-        document.location.href = "../Pages/Exam_Enrollment.html"
+        document.location.href = "./Pages/Exam_Enrollment.html"
         window.scrollTo(0, 0)
     })
 
     $(".enrollInTheExam").click(function(e){
         e.preventDefault()
-        document.location.href = "../Pages/Live_Exam.html"
+        document.location.href = "./Pages/Live_Exam.html"
         window.scrollTo(0, 0)
     })
 
     $(".submitTheExam").click(function(e){
         e.preventDefault()
-        document.location.href = "../Pages/Exam_Submition.html"
+        document.location.href = "./Pages/Exam_Submition.html"
         window.scrollTo(0, 0)
     })
 
     $(".addNewExam").click(function(e){
         e.preventDefault()
-        document.location.href = "../Pages/Exam_Creation_Info.html"
+        document.location.href = "./Pages/Exam_Creation_Info.html"
         window.scrollTo(0, 0)
     })
 
@@ -323,5 +323,6 @@ $(document).ready(function(){
         }
     }
 })
+
 
 
