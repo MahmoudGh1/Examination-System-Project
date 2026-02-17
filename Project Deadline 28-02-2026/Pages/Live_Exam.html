@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../Styles/Live_Exam.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="../Scripts/jquery-3.7.1.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="leftCorner">
+                <p class="AppBrand"><span class="Special">DHX</span></p>
+                <section class="examTitle">
+                    <h2 class="courseName">Advanced Computer Science Finals</h2>
+                    <p class="studentNameAndCode">Student: <span class="studentName">Alex Rivera</span> ID: <span class="studentID">DHX-2026-086</span></p>
+                </section>
+            </div>
+            <div class="rightCorner">
+                <div class="timer">
+                    <span class="timeIcon"><i class="fa-regular fa-clock"></i></span>
+                    <span class="time">00:00</span>
+                    <span class="timeRemaining">Remaining</span>
+                </div>
+                <button>Submit Exam ➪</button>
+            </div>
+        </header>
+        
+        <main>
+            <aside>
+                <section class="top">
+                    <h2>Question Navigator</h2>
+                    <ul>
+                        <li class="question">1</li>
+                        <li class="question">2</li>
+                        <li class="question">3</li>
+                        <li class="question">4</li>
+                        <li class="question">5</li>
+                        <li class="question">6</li>
+                        <li class="question">7</li>
+                        <li class="question">8</li>
+                        <li class="question">9</li>
+                        <li class="question">10</li>
+                        <li class="question">11</li>
+                        <li class="question">12</li>
+                        <li class="question">13</li>
+                        <li class="question">14</li>
+                        <li class="question">15</li>
+                        <li class="question">16</li>
+                        <li class="question">17</li>
+                        <li class="question">18</li>
+                        <li class="question">19</li>
+                        <li class="question">20</li>
+                        <li class="question">21</li>
+                        <li class="question">22</li>
+                        <li class="question">23</li>
+                        <li class="question">24</li>
+                        <li class="question">25</li>
+                        <li class="question">26</li>
+                        <li class="question">27</li>
+                        <li class="question">28</li>
+                        <li class="question">29</li>
+                        <li class="question">30</li>
+                    </ul>
+                </section>
+                <section class="down">
+                    <h2>Status Legend</h2>
+                    <div class="status">
+                        <span class="currentQuestion"></span>
+                        <p>Current Question</p>
+                    </div>
+                    <div class="status">
+                        <span class="Answered"></span>
+                        <p>Answered</p>
+                    </div>
+                    <div class="status">
+                        <span class="FlaggedForReview"></span>
+                        <p>Flagged for Review</p>
+                    </div>
+                    <div class="status">
+                        <span class="NotVisited"></span>
+                        <p>Not Visited</p>
+                    </div>
+                </section>
+            </aside>
+            <section class="mainSection">
+                <div class="questionTag">
+                    <p>Question <span class="questionNumber">05</span> of <span class="totalQuestions">30</span></p>
+                    <p><i class="fa-solid fa-circle-exclamation"></i> <span class="questionType">Multiple Choice Question</span> &bull; <span class="questionMark">2</span> Points</p>
+                </div>
+                <div class="questionContianer">
+                    <section class="CurrentQuestionContainer">
+                        <h1>In the context of asynchronous programming in javascript, which of the following best describes the purpose of the <span class="highLighted">Promise.allSettled()</span> method?</h1>
+                        <div class="choice">
+                            <label for="choice1">
+                                <span class="choiceNumber">A</span>
+                                <p class="answer">It returns a promise that fulfills when all of the input's promises settle, regardless of whether they were fulfilled or rejected.</p>
+                            </label>
+                            <input type="radio" name="choice" id="choice1">
+                        </div>
+                        <div class="choice">
+                            <label for="choice2">
+                                <span class="choiceNumber">B</span>
+                                <p class="answer">It waits for the first promise to fulfill and ignores all other subsequent promise rejections.</p>
+                            </label>
+                            <input type="radio" name="choice" id="choice2">
+                        </div>
+                        <div class="choice">
+                            <label for="choice3">
+                                <span class="choiceNumber">C</span>
+                                <p class="answer">It creates a new promise that rejects immediately if any of the promises are rejected.</p>
+                            </label>
+                            <input type="radio" name="choice" id="choice3">
+                        </div>
+                        <div class="choice">
+                            <label for="choice4">
+                                <span class="choiceNumber">D</span>
+                                <p class="answer">It transforms an array of values into an array of settled promises using a mapping function.</p>
+                            </label>
+                            <input type="radio" name="choice" id="choice4">
+                        </div>
+                    </section>
+                </div>
+                <section class="footer">
+                    <button class="Previous"><span class="flip">➣</span> Previous</button>
+                    <button class="FlagForReview"><i class="fa-solid fa-flag"></i> Flag for Review</button>
+                    <div class="progressBarContainer">
+                        <p>Progress</p>
+                        <progress id="progressBar" max="100" value="16.6"></progress>
+                    </div>
+                    <button class="NextQuestion">Next Question ➣</button>
+                </section>
+            </section>
+        </main>
+
+    </body>
+</html>

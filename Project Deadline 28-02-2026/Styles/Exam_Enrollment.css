@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "inter";
+}
+
+body,
+html {
+  width: 100%;
+}
+
+body {
+  background-color: rgb(209, 247, 247);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 55px;
+  border-bottom: 1px solid gray;
+  box-shadow: 0px 2px 5px gray;
+  position: sticky;
+  background-color: rgb(209, 247, 247);
+  top: 0;
+}
+
+header .brand .AppBrand {
+  font-size: 14pt;
+  color: gray;
+  text-transform: uppercase;
+}
+
+header .brand .AppBrand .Special {
+  color: white;
+  background-color: dodgerblue;
+  padding: 10px;
+  font-weight: bold;
+  margin-right: 5px;
+  font-size: 16pt;
+  border-radius: 13px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 55px;
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  font-size: 12pt;
+  font-weight: bold;
+  color: black;
+  text-underline-offset: 0px;
+  transition: all 0.1s ease-in-out;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  color: deepskyblue;
+  text-underline-offset: 4px;
+}
+
+header .userOverview {
+  display: flex;
+  gap: 10px;
+  height: fit-content;
+}
+
+header .userOverview .userNameTitleContainer {
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid gray;
+  padding-left: 20px;
+}
+
+header .userOverview .userNameTitleContainer .userName {
+  font-weight: 600;
+  font-size: 12pt;
+}
+
+header .userOverview .userNameTitleContainer .userTitle {
+  color: rgb(175, 174, 174);
+  font-weight: 300;
+  text-align: end;
+  font-size: 10pt;
+}
+
+header .userOverview .userImage {
+  padding: 10px 20px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  outline: 1px solid rgb(0, 255, 0);
+  background-image: url("../Assets/Images/img.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+
+main {
+  flex: 1;
+  padding: 40px 10%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.mainExamDataContainer {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.leftSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.rightSection {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.header .subNavigation {
+  font-size: 11pt;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.header .subNavigation a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.header .examName {
+  font-size: 30pt;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.header .courseCodeLine {
+  color: #555;
+  font-weight: 500;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: left top;
+  border-radius: 15px;
+  margin-top: 25px;
+  background-color: #2d5a27;
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.examDescriptionContainer,
+.examRulesAndGuidelines,
+.ExamSummaryContainer,
+.enrollmentPasswordContainer {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.examRulesAndGuidelines h2 {
+  font-size: 16pt;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.examRulesAndGuidelines h2 i{
+    color: deepskyblue;
+    font-size: 22pt;
+}
+
+.rules {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.rules li {
+  font-size: 11pt;
+  color: #444;
+  line-height: 1.5;
+}
+
+.rules .rule {
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.rules .rule1 i {
+  color: red;
+}
+
+.rules .rule2 i,
+.rules .rule3 i,
+.rules .rule4 i {
+  color: dodgerblue;
+}
+
+.summaries {
+  list-style: none;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.summary:last-child {
+  border-bottom: none;
+}
+
+.summary .topic {
+  font-size: 10pt;
+  color: #666;
+  font-weight: 500;
+}
+
+.summary .TopicValue {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.summaries i {
+  font-size: 10pt;
+  color: gray;
+}
+
+.enrollmentPasswordContainer {
+  background-color: #eef4ff;
+  border: 1px solid #d0e0ff;
+}
+
+.Enroll {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.Enroll label {
+  font-weight: 600;
+  font-size: 11pt;
+  color: #444;
+}
+
+.Enroll input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 12pt;
+}
+
+.enrollmentPasswordContainer button {
+  width: 100%;
+  padding: 15px;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 12pt;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 15px 0;
+}
+
+.enrollmentPasswordContainer button:hover {
+  background-color: #1557b0;
+}
+
+.enrollmentPasswordContainer p {
+  font-size: 10pt;
+  color: #666;
+  text-align: center;
+}
+
+.enrollmentPasswordContainer p:nth-of-type(1) {
+  text-align: start;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
