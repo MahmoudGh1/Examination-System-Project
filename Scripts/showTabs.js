@@ -15,37 +15,37 @@ $(document).ready(function(){
 
     $(".goToStudent").click(function(e){
         e.preventDefault()
-        document.location.href = "Pages/Student_Dashboard.html"
+        document.location.href = "Student_Dashboard.html"
         window.scrollTo(0, 0)
     })
 
     $(".goToTeacher").click(function(e){
         e.preventDefault()
-        document.location.href = "Pages/Teacher_Dashboard.html"
+        document.location.href = "Teacher_Dashboard.html"
         window.scrollTo(0, 0)
     })
 
     $(".enrollBtn").click(function(e){
         e.preventDefault()
-        document.location.href = "Pages/Exam_Enrollment.html"
+        document.location.href = "Exam_Enrollment.html"
         window.scrollTo(0, 0)
     })
 
     $(".enrollInTheExam").click(function(e){
         e.preventDefault()
-        document.location.href = "Pages/Live_Exam.html"
+        document.location.href = "Live_Exam.html"
         window.scrollTo(0, 0)
     })
 
     $(".submitTheExam").click(function(e){
         e.preventDefault()
-        document.location.href = "Pages/Exam_Submition.html"
+        document.location.href = "Exam_Submition.html"
         window.scrollTo(0, 0)
     })
 
     $(".addNewExam").click(function(e){
         e.preventDefault()
-        document.location.href = "Pages/Exam_Creation_Info.html"
+        document.location.href = "Exam_Creation_Info.html"
         window.scrollTo(0, 0)
     })
 
@@ -323,6 +323,7 @@ $(document).ready(function(){
         }
     }
 })
+
 
 
 
