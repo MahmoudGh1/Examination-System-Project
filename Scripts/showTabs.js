@@ -3,13 +3,13 @@ let linkHash = window.location.hash;
 $(document).ready(function(){
     $(".buttons .login").click(function(e){
         e.preventDefault()
-        document.location.href = "./Pages/Login_Page.html"
+        document.location.href = "../Pages/Login_Page.html"
         window.scrollTo(0, 0)
     })
 
     $(".buttons .signup").click(function(e){
         e.preventDefault()
-        document.location.href = "./Pages/Registration_Page.html"
+        document.location.href = "../Pages/Registration_Page.html"
         window.scrollTo(0, 0)
     })
 
@@ -323,4 +323,5 @@ $(document).ready(function(){
         }
     }
 })
+
 
