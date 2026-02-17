@@ -1,0 +1,573 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body, html{
+    width: 100%;
+}
+
+body{
+    background-color: rgb(209, 247, 247);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    width: 60%;
+    height: fit-content;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: 0px 0px 6px gray;
+    margin: 64px auto;
+    flex: 1;
+}
+
+main .intro{
+    padding: 35px;
+    background-color: #2D3343;
+    border-top-left-radius: inherit;
+    border-bottom-left-radius: inherit;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0.75;
+}
+
+main .intro .up{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+main .intro .up .brand{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    gap: 5px;
+}
+
+main .intro .up .brand p{
+    font-size: 22pt;
+    width: fit-content;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+main .intro .up .brand p:nth-of-type(2){
+    border-left: 2px solid gray;
+    font-size: 10pt;
+    padding: 0 6px;
+    color: gray;
+    font-weight: 700;
+}
+
+main .intro .up h1{
+    font-size: 34pt;
+    font-weight: bold;
+}
+
+main .intro .up > p{
+    font-size: 15pt;
+    color: rgb(187, 187, 187);
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+main .intro .up > p span{
+    color: red;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: dodgerblue;
+}
+
+main .intro .down{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .intro .down .usersImages{
+    display: flex;
+}
+
+main .intro .down .usersImages span{
+    position: relative;
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+main .intro .down .usersImages span:nth-of-type(1){
+    background-color: #95BB9F;
+}
+
+main .intro .down .usersImages span:nth-of-type(2){
+    background-color: #BBCFAF;
+    left: -10px;
+    box-shadow: -2px 0px 5px black;
+}
+
+main .intro .down .usersImages span:nth-of-type(3){
+    background-color: #E5E5DF;
+    left: -20px;
+    box-shadow: -2px 0px 5px black;
+}
+
+main .intro .down .usersImages span:nth-of-type(4){
+    background-color: rgb(101, 68, 247);
+    left: -30px;
+    font-size: 6pt;
+    display: flex;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -2px 0px 5px black;
+}
+
+main .intro .down .quote{
+    color: gray;
+}
+
+main .Registration{
+    padding: 40px 35px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+main .Registration > h2{
+    font-size: 22pt;
+    font-weight: bold;
+}
+
+main .Registration > p{
+    font-size: 12pt;
+    font-weight: 300;
+    color: gray;
+}
+
+main .dataEntry{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+    flex: 1;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+main .dataEntry .userType{
+    display: flex;
+    background-color: rgba(219, 219, 219, 0.555);
+    list-style-type: none;
+    padding: 2px;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+main .dataEntry .userType li{
+    padding: 12px;
+    flex: 1;
+    text-align: center;
+    border-radius: inherit;
+    font-size: 12pt;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .dataEntry .userType li:nth-of-type(1){
+    background-color: white;
+    color: rgb(101, 68, 247);
+    font-weight: 700;
+}
+
+main .dataEntry .userType li:hover{
+    background-color: #f8f7f7c4;
+}
+
+.StudentLogin form, .TeacherLogin form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.userInputName, .userEmail, .userPassword, .userSpecialKey{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userInputName label, .userEmail label, .userPassword label, .userSpecialKey label{
+    font-size: 12pt;
+    cursor: text;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.userPassword{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+}
+
+.StudentLogin .userPassword{
+    flex-direction: column;
+}
+
+
+.containerForIcon{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.userInputName input, .userEmail input, .userPassword input, .userSpecialKey input{
+    padding: 12px 10px 12px 32px;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.637);
+}
+
+.userPassword .firstPassword, .userPassword .confirmPassword{
+    flex: 1;
+}
+
+.containerForIcon span{
+    position: absolute;
+    left: 5px;
+    color: rgba(128, 128, 128, 0.336);
+    font-size: 12pt;
+}
+
+.userInputName input:hover, .userPassword input:hover, .userSpecialKey input:hover,
+.userInputName input:focus, .userPassword input:focus, .userSpecialKey input:focus{
+    border-color: rgb(0, 0, 0);
+}
+
+
+.termsOfUse{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.termsOfUse input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.termsOfUse input[type="checkbox"]:hover{
+    border-color: black;    
+}
+
+.termsOfUse input[type="checkbox"]::after{
+    content: "\f00c";
+    font-family: "Font Awesome 7 free";
+    font-weight: 600;
+    font-size: 7pt;
+    border-radius: 50%;
+    display: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.termsOfUse input[type="checkbox"]:checked{
+    background-color: rgb(101, 68, 247);
+}
+
+.termsOfUse input[type="checkbox"]:checked::after{
+    display: block;
+}
+
+.termsOfUse label{
+    font-size: 11pt;
+}
+
+.termsOfUse label a{
+    color: gray;
+}
+
+.TeacherLogin form button, .StudentLogin form button {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 12pt;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(101, 68, 247);
+    color: white;
+    box-shadow: 0 4px 12px 0px gray;
+}
+
+
+.dataEntry > p{
+    text-align: center;
+}
+
+.dataEntry p a{
+    color: rgb(101, 68, 247);
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+.TeacherLogin{
+    display: none;
+}
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 35px;
+    font-weight: 400;
+    color: gray;
+}
+
+footer p span{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    vertical-align: middle;
+    background-color: rgb(0, 192, 0);
+    border-radius: 50%;
+    animation: blink 0.3s infinite alternate;
+}
+
+@keyframes blink{
+    0%{
+        background-color: rgb(0, 192, 0);
+    }
+    100%{
+        background-color: rgba(0, 192, 0, 0.555);
+    }
+}
+
+footer a{
+    color: gray;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 479px) {
+
+    main {
+        flex-direction: column;
+        width: 92%;
+        margin: 24px auto;
+        border-radius: 20px;
+    }
+
+    main .intro {
+        display: none;
+    }
+
+    main .Registration {
+        padding: 28px 20px;
+        border-radius: 20px;
+    }
+
+    main .Registration > h2 {
+        font-size: 18pt;
+    }
+
+    main .Registration > p {
+        font-size: 11pt;
+    }
+
+    main .dataEntry {
+        margin-top: 20px;
+        gap: 8px;
+    }
+
+    main .dataEntry .userType li {
+        font-size: 10pt;
+        padding: 10px 6px;
+    }
+
+    .userPassword {
+        flex-direction: column;
+    }
+
+    .userInputName label,
+    .userEmail label,
+    .userSpecialKey label {
+        font-size: 10pt;
+    }
+
+    .termsOfUse label {
+        font-size: 10pt;
+    }
+
+    .TeacherLogin form button,
+    .StudentLogin form button {
+        padding: 13px;
+        font-size: 11pt;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 14px;
+        padding: 14px 10px;
+        font-size: 10pt;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    main {
+        flex-direction: column;
+        width: 88%;
+        margin: 32px auto;
+        border-radius: 24px;
+    }
+
+    main .intro {
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+        border-bottom-left-radius: 0;
+        padding: 28px 24px;
+        flex: unset;
+    }
+
+    main .intro .down {
+        display: none;
+    }
+
+    main .intro .up h1 {
+        font-size: 24pt;
+    }
+
+    main .intro .up > p {
+        font-size: 12pt;
+    }
+
+    main .intro .up {
+        gap: 16px;
+    }
+
+    main .Registration {
+        padding: 28px 22px;
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+    main .Registration > h2 {
+        font-size: 18pt;
+    }
+
+    main .dataEntry {
+        margin-top: 20px;
+    }
+
+    .userPassword {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 18px;
+        padding: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        width: 88%;
+        margin: 40px auto;
+        flex-direction: column;
+        border-radius: 28px;
+    }
+
+    main .intro {
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
+        border-bottom-left-radius: 0;
+        flex: unset;
+        padding: 32px 30px;
+    }
+
+    main .intro .up h1 {
+        font-size: 28pt;
+    }
+
+    main .intro .up > p {
+        font-size: 13pt;
+    }
+
+    main .Registration {
+        padding: 36px 30px;
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 28px;
+    }
+
+    main .Registration > h2 {
+        font-size: 20pt;
+    }
+
+    .userPassword {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+    main {
+        width: 80%;
+        margin: 48px auto;
+    }
+
+    main .intro .up h1 {
+        font-size: 28pt;
+    }
+
+    main .intro .up > p {
+        font-size: 13pt;
+    }
+}

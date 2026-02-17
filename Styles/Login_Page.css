@@ -1,0 +1,359 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "inter";
+}
+
+body, html{
+    width: 100%;
+}
+
+body{
+    background-color: rgb(209, 247, 247);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    flex: 1;
+    margin: 48px auto;
+    width: 420px;
+}
+
+main .brand{
+    background-color: rgb(101, 68, 247);
+    padding: 18px 12px;
+    width: fit-content;
+    color: white;
+    border-radius: 12px;
+    font-size: 18pt;
+    font-weight: bold;
+}
+
+main .title{
+    text-align: center;
+}
+
+main .title h1{
+    font-size: 34pt;
+}
+
+main .title p{
+    font-size: 16pt;
+    color: gray;
+}
+
+main .dataEntry{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-top: 15px;
+    border-radius: 18px;
+    padding: 30px;
+    width: 100%;
+    height: fit-content;
+    box-shadow: 0px 0px 15px rgba(128, 128, 128, 0.486);
+}
+
+main .dataEntry .userType{
+    display: flex;
+    background-color: rgba(219, 219, 219, 0.555);
+    list-style-type: none;
+    padding: 2px;
+    justify-content: space-between;
+    border-radius: 12px;
+}
+
+main .dataEntry .userType li{
+    padding: 12px;
+    flex: 1;
+    text-align: center;
+    border-radius: inherit;
+    font-size: 12pt;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main .dataEntry .userType li:nth-of-type(1){
+    background-color: white;
+    color: rgb(101, 68, 247);
+    font-weight: 700;
+}
+
+main .dataEntry .userType li:hover{
+    background-color: rgba(248, 247, 247, 0.769);
+}
+
+.StudentLogin form, .TeacherLogin form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.userInputName, .userPassword, .userSpecialKey{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.userInputName label, .userPassword label, .userSpecialKey label{
+    font-size: 12pt;
+    cursor: text;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.containerForIcon{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.userInputName input, .userPassword input, .remember input, .userSpecialKey input{
+    padding: 12px 10px 12px 32px;
+    border-radius: 8px;
+    outline: none;
+    width: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.637);
+}
+
+
+
+.containerForIcon span{
+    position: absolute;
+    left: 5px;
+    color: rgba(128, 128, 128, 0.336);
+    font-size: 12pt;
+}
+
+.userInputName input:hover, .userPassword input:hover, .remember input:hover, .userSpecialKey input:hover,
+.userInputName input:focus, .userPassword input:focus, .remember input:focus, .userSpecialKey input:focus{
+    border-color: rgb(0, 0, 0);
+}
+
+
+.userPassword a, .userSpecialKey a{
+    text-align: end;
+    color: rgb(101, 68, 247);
+    font-size: 10pt;
+    font-weight: 600;
+}
+
+.remember{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.remember input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.remember input[type="checkbox"]:hover{
+    border-color: black;    
+}
+
+.remember input[type="checkbox"]::after{
+    content: "\f00c";
+    font-family: "Font Awesome 7 free";
+    font-weight: 600;
+    font-size: 7pt;
+    border-radius: 50%;
+    display: none;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.remember input[type="checkbox"]:checked{
+    background-color: rgb(101, 68, 247);
+}
+
+.remember input[type="checkbox"]:checked::after{
+    display: block;
+}
+
+
+.TeacherLogin form button, .StudentLogin form button {
+    padding: 15px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    font-size: 12pt;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(101, 68, 247);
+    color: white;
+    box-shadow: 0 4px 12px 0px gray;
+}
+
+.TeacherLogin{
+    display: none;
+}
+
+.dataEntry p a{
+    color: rgb(101, 68, 247);
+    font-size: 12pt;
+    font-weight: 600;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 35px;
+    font-weight: 400;
+    color: gray;
+}
+
+footer p span{
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    vertical-align: middle;
+    background-color: rgb(0, 192, 0);
+    border-radius: 50%;
+    animation: blink 0.3s infinite alternate;
+}
+
+@keyframes blink{
+    0%{
+        background-color: rgb(0, 192, 0);
+    }
+    100%{
+        background-color: rgba(0, 192, 0, 0.555);
+    }
+}
+
+footer a{
+    color: gray;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 479px) {
+
+    main {
+        gap: 16px;
+        margin: 24px auto;
+    }
+
+    main .brand {
+        font-size: 15pt;
+        padding: 14px 11px;
+    }
+
+    main .title h1 {
+        font-size: 26pt;
+    }
+
+    main .title p {
+        font-size: 13pt;
+    }
+
+    main .dataEntry {
+        padding: 20px 16px;
+        gap: 22px;
+    }
+
+    main .dataEntry .userType li {
+        font-size: 11pt;
+        padding: 10px 8px;
+    }
+
+    .userInputName label,
+    .userPassword label,
+    .userSpecialKey label {
+        font-size: 11pt;
+    }
+
+    .TeacherLogin form button,
+    .StudentLogin form button {
+        padding: 13px;
+        font-size: 12pt;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 14px 10px;
+        font-size: 10pt;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+
+    main {
+        gap: 22px;
+        margin: 32px auto;
+    }
+
+    main .title h1 {
+        font-size: 30pt;
+    }
+
+    main .title p {
+        font-size: 14pt;
+    }
+
+    main .dataEntry {
+        padding: 26px 22px;
+        gap: 28px;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    main {
+        gap: 26px;
+        margin: 40px auto;
+    }
+
+    main .title h1 {
+        font-size: 32pt;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 28px;
+    }
+}

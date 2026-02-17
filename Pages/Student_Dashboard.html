@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="../Styles/Student_Dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../Scripts/jquery-3.7.1.js"></script>
+  </head>
+  <body class="studentBody">
+    <aside>
+      <div class="up">
+        <p class="AppBrand"><span class="Special">DHX</span> Exam System</p>
+        <ul class="tabs">
+            <li><i class="fa-solid fa-square-poll-vertical"></i> Results</li>
+            <li class="examsTab"><i class="fa-regular fa-file-lines"></i> My Exams</li>
+            <li><i class="fa-solid fa-user"></i> Profile</li>
+        </ul>
+      </div>
+      <div class="buttons">
+        <button class="asideBtn settingsBtn"><i class="fa-solid fa-gear"></i> Setting</button>
+        <button class="asideBtn appearance"><i class="fa-regular fa-moon"></i> Appearance</button>
+      </div>
+    </aside>
+    <main>
+      <header>
+        <section class="header-content" id="resultsHeader">
+          <div class="greeting">
+            <section class="greetingContainer">
+              <h1>Welcome back, <span class="userName">Alex</span>!</h1>
+              <p class="reminder">You have <span class="numberOfExams">2</span> scheduled exams for this week. Keep up the good work!</p>
+            </section>
+            <div class="userAndEnrollContainer">
+              <button class="enrollBtn">+ ENROLL IN NEW EXAM</button> 
+              <div class="userNameTitleContainer">
+                <p class="userName">Alex Rivera</p>
+                <p class="userTitle">Student</p>
+              </div>
+              <div class="userImage"></div>
+            </div>
+          </div>
+
+          <section class="usefulData">
+            <div class="statusContainers">
+              <p class="largeNumber">12</p>
+              <p class="supInfo">EXAMS TAKEN</p>
+            </div>
+            <div class="statusContainers">
+              <p class="largeNumber">92%</p>
+              <p class="supInfo">AVG. SCORE</p>
+            </div>
+            <div class="statusContainers">
+              <p class="largeNumber">4</p>
+              <p class="supInfo">CERTIFICATES</p>
+            </div>
+            <div class="statusContainers">
+              <p class="largeNumber">1</p>
+              <p class="supInfo">IN PROGRESS</p>
+            </div>
+          </section>
+        </section>
+
+        <section class="header-content" id="examsHeader">
+          <div class="greeting">
+            <section class="greetingContainer">
+              <h1>My Exams List</h1>
+              <p class="reminder">Manage your upcoming assessments and review your exam history.</p>
+            </section>
+            <div class="userAndEnrollContainer">
+              <button class="enrollBtn">+ ENROLL IN NEW EXAM</button>
+              <div class="userNameTitleContainer">
+                <p class="userName">Alex Rivera</p>
+                <p class="userTitle">Student</p>
+              </div>
+              <div class="userImage"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="header-content" id="accountSettings">
+          <div class="greeting">
+            <section class="greetingContainer">
+              <h1>Account Settings</h1>
+              <p class="reminder">Manage your profile, security preferences, and notification settings.</p>
+            </section>
+            <div class="userAndEnrollContainer">
+              <button class="enrollBtn">+ ENROLL IN NEW EXAM</button>
+              <div class="userNameTitleContainer">
+                <p class="userName">Alex Rivera</p>
+                <p class="userTitle">Student</p>
+              </div>
+              <div class="userImage"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="header-content" id="profileManager">
+          <div class="greeting">
+            <section class="greetingContainer">
+              <h1>Profile Management</h1>
+              <p class="reminder">Manage your public identity and professional credentials.</p>
+            </section>
+            <div class="userAndEnrollContainer">
+              <button class="enrollBtn">+ ENROLL IN NEW EXAM</button>
+              <div class="userNameTitleContainer">
+                <p class="userName">Alex Rivera</p>
+                <p class="userTitle">Student</p>
+              </div>
+              <div class="userImage"></div>
+            </div>
+          </div>
+        </section>
+
+
+      </header>
+      <section class="mainBodyContainer">
+        <section class="studentResultTab">
+          <section class="scheduled">
+            <section class="scheduledHeader">
+              <h2>Scheduled Exams</h2>
+              <a href="#">View All</a>
+            </section>
+            <ul class="Exams">
+              <li>
+                <div class="date">
+                  <p>OCT</p>
+                  <p>24</p>
+                </div>
+                <div class="examData">
+                  <p>Advanced React Patterns</p>
+                  <p><i class="fa-regular fa-clock"></i> <span>10:00</span> <span>AM</span> - <span>11:30</span> <span>AM</span></p>
+                </div>
+              </li>
+              <li>
+                <div class="date">
+                  <p>OCT</p>
+                  <p>26</p>
+                </div>
+                <div class="examData">
+                  <p>Cloud Architecture</p>
+                  <p><i class="fa-regular fa-clock"></i> <span>02:00</span> <span>PM</span> - <span>03:30</span> <span>PM</span></p>
+                </div>
+              </li>
+            </ul>
+            <button class="dashedBtn">+ Set Reminder</button>
+          </section>
+          <section class="RecentExamResults">
+            <section class="RecentExamsHeader">
+              <h2>Recent Exam Results</h2>
+              <div class="inputWithIcon">
+                <input type="search" name="searchExams" id="searchExams" placeholder="Search Exams...">
+              </div>
+            </section>
+            <section class="TableOfExams">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Exam Name</th>
+                    <th>Subject</th>
+                    <th>Date</th>
+                    <th>Score</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td id="examName">Javascript ES6+ Essentials</td>
+                    <td class="subject">Web Development</td>
+                    <td class="Date">10/12/2023</td>
+                    <td class="Score passed"><span>9.5</span> / <span>10</span></td>
+                    <td class="passed"><span class="passed">Passed</span></td>
+                  </tr>
+                  <tr>
+                    <td id="examName">Javascript ES6+ Essentials</td>
+                    <td class="subject">Web Development</td>
+                    <td class="Date">10/12/2023</td>
+                    <td class="Score passed"><span>9.5</span> / <span>10</span></td>
+                    <td class="passed"><span class="passed">Passed</span></td>
+                  </tr>
+                  <tr>
+                    <td id="examName">Javascript ES6+ Essentials</td>
+                    <td class="subject">Web Development</td>
+                    <td class="Date">10/12/2023</td>
+                    <td class="Score passed"><span>9.5</span> / <span>10</span></td>
+                    <td class="passed"><span class="passed">Passed</span></td>
+                  </tr>
+                  <tr>
+                    <td id="examName">Javascript ES6+ Essentials</td>
+                    <td class="subject">Web Development</td>
+                    <td class="Date">10/12/2023</td>
+                    <td class="Score passed"><span>9.5</span> / <span>10</span></td>
+                    <td class="passed"><span class="passed">Passed</span></td>
+                  </tr>
+                  <tr>
+                    <td id="examName">Javascript ES6+ Essentials</td>
+                    <td class="subject">Web Development</td>
+                    <td class="Date">10/12/2023</td>
+                    <td class="Score passed"><span>9.5</span> / <span>10</span></td>
+                    <td class="passed"><span class="passed">Passed</span></td>
+                  </tr>
+                  <tr>
+                    <td id="examName">Javascript ES6+ Essentials</td>
+                    <td class="subject">Web Development</td>
+                    <td class="Date">10/12/2023</td>
+                    <td class="Score passed"><span>9.5</span> / <span>10</span></td>
+                    <td class="passed"><span class="passed">Passed</span></td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td colspan="2">Showing <span>4</span> of <span>12</span> results</td>
+                    <td colspan="3">
+                      <button class="normalBtn">Previous</button>
+                      <button class="coloredBtn">Next</button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </section>
+          </section>
+        </section>
+        <section class="studentAllExamsTab">
+            <div class="allExamsHeader">
+              <ul>
+                <li>All</li>
+                <li>Upcoming</li>
+                <li>Completed</li>
+              </ul>
+              <div class="inputContainer">
+                <input type="search" name="userSearch" id="userSearch" placeholder="Search exams or subject...">
+              </div>
+            </div>
+            <div class="examsContainer">
+              <div class="exam-card">
+                  <div class="examIcon">
+                      🎺
+                  </div>
+                  <span class="statusInProgress">
+                      in-progress
+                  </span>
+                  <div class="examTitle">Database Systems Lab</div>
+                  <div class="examSubject">Subject: Computer Science</div>
+                  <div class="examInfo">
+                      <span>120 Mins</span>
+                      <span>20 Questions</span>
+                  </div>
+                  <div class="progressBar">
+                      <div class="progressFill"></div>
+                  </div>
+                  <div class="exam-footer">
+                      <button class="examBtn primary">Resume →</button>
+                  </div>
+              </div>
+              <div class="exam-card">
+                  <div class="examIcon">
+                      🎺
+                  </div>
+                  <span class="statusInProgress">
+                      in-progress
+                  </span>
+                  <div class="examTitle">Database Systems Lab</div>
+                  <div class="examSubject">Subject: Computer Science</div>
+                  <div class="examInfo">
+                      <span>120 Mins</span>
+                      <span>20 Questions</span>
+                  </div>
+                  <div class="progressBar">
+                      <div class="progressFill"></div>
+                  </div>
+                  <div class="exam-footer">
+                      <button class="examBtn primary">Resume →</button>
+                  </div>
+              </div>
+              <div class="exam-card">
+                  <div class="examIcon">
+                      🎺
+                  </div>
+                  <span class="statusInProgress">
+                      in-progress
+                  </span>
+                  <div class="examTitle">Database Systems Lab</div>
+                  <div class="examSubject">Subject: Computer Science</div>
+                  <div class="examInfo">
+                      <span>120 Mins</span>
+                      <span>20 Questions</span>
+                  </div>
+                  <div class="progressBar">
+                      <div class="progressFill"></div>
+                  </div>
+                  <div class="exam-footer">
+                      <button class="examBtn primary">Resume →</button>
+                  </div>
+              </div>
+              <div class="exam-card">
+                  <div class="examIcon">
+                      🎺
+                  </div>
+                  <span class="statusInProgress">
+                      in-progress
+                  </span>
+                  <div class="examTitle">Database Systems Lab</div>
+                  <div class="examSubject">Subject: Computer Science</div>
+                  <div class="examInfo">
+                      <span>120 Mins</span>
+                      <span>20 Questions</span>
+                  </div>
+                  <div class="progressBar">
+                      <div class="progressFill"></div>
+                  </div>
+                  <div class="exam-footer">
+                      <button class="examBtn primary">Resume →</button>
+                  </div>
+              </div>
+              <div class="exam-card">
+                  <div class="examIcon">
+                      🎺
+                  </div>
+                  <span class="statusInProgress">
+                      in-progress
+                  </span>
+                  <div class="examTitle">Database Systems Lab</div>
+                  <div class="examSubject">Subject: Computer Science</div>
+                  <div class="examInfo">
+                      <span>120 Mins</span>
+                      <span>20 Questions</span>
+                  </div>
+                  <div class="progressBar">
+                      <div class="progressFill"></div>
+                  </div>
+                  <div class="exam-footer">
+                      <button class="examBtn primary">Resume →</button>
+                  </div>
+              </div>
+              <div class="exam-card">
+                  <div class="examIcon">
+                      🎺
+                  </div>
+                  <span class="statusInProgress">
+                      in-progress
+                  </span>
+                  <div class="examTitle">Database Systems Lab</div>
+                  <div class="examSubject">Subject: Computer Science</div>
+                  <div class="examInfo">
+                      <span>120 Mins</span>
+                      <span>20 Questions</span>
+                  </div>
+                  <div class="progressBar">
+                      <div class="progressFill"></div>
+                  </div>
+                  <div class="exam-footer">
+                      <button class="examBtn primary">Resume →</button>
+                  </div>
+              </div>
+            </div>
+            <div class="pagesInfo">
+              <p>Showing <span class="pageStart">1</span> - <span class="pageEnd">6</span> of <span class="totalExams">14</span> exams</p>
+              <div class="pagination">
+                <button class="previous">Previous</button>
+                <button class="next">Next</button>
+              </div>
+            </div>
+        </section>
+        <section class="profileTab">
+          <section class="leftProfileSection">
+            <section class="userData">
+              <div class="userBackgroundCover"></div>
+              <div class="userImageAndData">
+                <div class="imageWrapper">
+                  <img src="../Assets/Images/img.png" alt="user image">
+                  <input type="file" name="userInputImage" id="userInputImage">
+                  <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="data">
+                  <div class="userName">
+                    <label for="userFullName"><i class="fa-solid fa-person"></i> Full Name</label>
+                    <input type="text" name="userFullName" id="userFullName">
+                  </div>
+                  <div class="userProfessionalRole">
+                    <label for="userRole"><i class="fa-brands fa-circle-zulip"></i> Professional Role</label>
+                    <input type="text" name="userRole" id="userRole">
+                  </div>
+                </div>
+                <div class="Bio">
+                  <label for="userBio"><i class="fa-solid fa-fingerprint"></i> Professional Bio</label>
+                  <textarea name="userBio" id="userBio" rows="6" cols="50"></textarea>
+                </div>
+              </div>
+            </section>
+            <section class="userQuickStatus">
+              <div class="title">
+                <h2><i class="fa-solid fa-arrow-up-right-dots"></i> Quick Stats</h2>
+                <p>Live Platform Data</p>
+              </div>
+              <div class="statsContainer">
+                <div class="card card1">
+                  <h2 class="stats"><i class="fa-brands fa-hotjar"></i> Experience</h2>
+                  <div class="cardStatData">
+                    <p><span class="years">12</span> years</p>
+                    <p class="statsSupData">Full stack SWE</p>
+                  </div>
+                </div>
+                <div class="card card2">
+                  <h2 class="stats"><i class="fa-solid fa-file-lines"></i> Exams Taken</h2>
+                  <div class="cardStatData">
+                    <p><span class="exams">12</span></p>
+                    <p class="statsSupData">Successfully passed</p>
+                  </div>
+                </div>
+                <div class="card card3">
+                  <h2 class="stats"><i class="fa-solid fa-book"></i> Subject examine in</h2>
+                  <div class="cardStatData">
+                    <p><span class="subjects">12</span></p>
+                    <p class="statsSupData">Across the current Year</p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </section>
+          <section class="rightProfileSection">
+            <div class="publicProfileView">
+              <div class="PublicProfileHeader">
+                <p>Public Profile Preview</p>
+                <span class="eyeShow"><i class="fa-solid fa-eye"></i></span>
+                <span class="eyeHide"><i class="fa-solid fa-eye-slash"></i></span>
+              </div>
+              <div class="PublicProfileCard">
+                <div class="profileImageWrapper"></div>
+                <div class="userNameAndRole">
+                  <p>Alex Rivera</p>
+                  <p>Student</p>
+                </div>
+                <div class="ProfileReviewStats">
+                  <div class="stat1">
+                    <p class="bold"><span class="years">12</span></p>
+                    <p class="lighter">Years</p>
+                  </div>
+                  <div class="stat2">
+                    <p class="bold"><span class="ExamTaken"></span></p>
+                    <p class="lighter">Exam Taken</p>
+                  </div>
+                </div>
+                <button>View Full Public Profile</button>
+              </div>
+            </div>
+            <div class="displaySettings">
+              <h2><i class="fa-solid fa-user-gear"></i> Display Settings</h2>
+              <div class="visibility">
+                <div class="settingInfo">
+                  <p class="bolder">Public visibility</p>
+                  <p class="lighter">Allow students to search you</p>
+                </div>
+                <input type="checkbox" class="Toggle">
+              </div>
+              <div class="showExperience">
+                <div class="settingInfo">
+                  <p class="bolder">Show Experience Years</p>
+                  <p class="lighter">Display years on public profile.</p>
+                </div>
+                <input type="checkbox" class="Toggle">
+              </div>
+              <div class="EmailNotification">
+                <div class="settingInfo">
+                  <p class="bolder">Email Notifications</p>
+                  <p class="lighter">Profile update alerts</p>
+                </div>
+                <input type="checkbox" class="Toggle">
+              </div>
+            </div>
+            <div class="ReviewPending">
+              <p class="warningIcon"></p>
+              <div class="waringData">
+                <h2>Review Pending</h2>
+                <p>Your professional bio is currently being reviewed by the administration for the upcoming academic newsletter. Profile changes will reflect after approval.</p>
+              </div>
+            </div>
+          </section>
+        </section>
+        <section class="settingsTab">
+          <div class="settingsLeftSection">
+            <div class="userSettingNavigationCard">
+              <div class="profilePhoto">
+                <img src="" alt="">
+              </div>
+              <div class="studentData">
+                <p class="userName">Alex Rivera</p>
+                <p class="userRoleAndID">Student ID: <span class="studentID">DHX-2026-084</span></p>
+              </div>
+              <nav>
+                <ul class="navigation">
+                  <li class="navTabs"><i class="fa-solid fa-user-pen"></i> Account Profile</li>
+                  <li class="navTabs"><i class="fa-solid fa-shield-halved"></i> Privacy & Security</li>
+                  <li class="navTabs"><i class="fa-solid fa-bell"></i> Notifications</li>
+                </ul>
+              </nav>
+            </div>
+            <div class="accountStatus">
+              <h2 class="statusTitle">Account Status</h2>
+              <div class="plan">
+                <p>Plan</p>
+                <p class="userPlan">Standard</p>
+              </div>
+              <div class="storage">
+                <div class="storageStatus">
+                  <p>Storage Used</p>
+                  <p><span class="usedGigas">0.2 GB</span> / <span class="totalGigas">1.5 GB</span></p>
+                </div>
+                <progress id="storageProgress" max="100" value="20"></progress>
+              </div>
+            </div>
+          </div>
+
+          <div class="settingsRightSection">
+            <div class="accountSettings">
+              <div class="accountSettingsTitle">
+                <p>Account Settings</p>
+                <p class="subTitle">Update your personal information and contact details.</p>
+              </div>
+              <div class="accountInputs">
+                <div class="InputFields">
+                  <label for="Fullname">Full Name</label>
+                  <input type="text" name="Fullname" id="Fullname">
+                </div>
+                <div class="InputFields">
+                  <label for="studentID">Student ID</label>
+                  <input type="text" name="studentID" id="studentID" value="DHX-2026-084" disabled>
+                </div>
+                <div class="InputFields">
+                  <label for="emailAddr">Email Address</label>
+                  <input type="email" name="emailAddr" id="emailAddr">
+                </div>
+                <div class="InputFields">
+                  <label for="phoneNumber">Phone Number</label>
+                  <input type="text" name="phoneNumber" id="phoneNumber">
+                </div>
+              </div>
+              <button class="SaveChanges">Save Changes</button>
+            </div>
+
+            <div class="privacyAndSecurity">
+              <div class="privacyAndSecurityTitle">
+                <p>Privacy & Security</p>
+                <p class="subTitle">Manage your password and account security protocols.</p>
+              </div>
+              <div class="passwordChangeContainer">
+                <h2><i class="fa-solid fa-lock"></i> Change Password</h2>
+                <div class="passwordContainer">
+                  <input type="password" name="currentPas" id="currentPas" placeholder="Current Password">
+                  <input type="password" name="newPas" id="newPas" placeholder="New Password">
+                  <input type="password" name="confirmNewPas" id="confirmNewPas" placeholder="Confirm Password">
+                </div>
+                <button class="updatePassword">Update Password</button>
+              </div>
+              <div class="towFactor">
+                <div class="textTwoFactor">
+                  <h2><i class="fa-solid fa-anchor-circle-check"></i> Two-Factor Verification</h2>
+                  <p class="subData">Secure your account with an extra layer of security via SMS or Auth App</p>
+                </div>
+                <input type="checkbox" name="factorToggle" id="factorToggle">
+              </div>
+            </div>
+
+            <div class="NotificationPreferences">
+              <div class="NotificationPreferencesTitle">
+                <p>Notification Preferences</p>
+                <p class="subTitle">Control how and when you want to be notified.</p>
+              </div>
+              <div class="notificationSetting">
+                <div class="notiPreferContainer">
+                  <div class="emailNotification">
+                    <h2><i class="fa-solid fa-bell"></i> Email Notifications</h2>
+                    <p class="subData">Get exam reminders, results, and system updates via email.</p>
+                  </div>
+                  <input type="checkbox" name="emailNotify" id="emailNotify">
+                </div>
+                <div class="notiPreferContainer">
+                  <div class="smsNotificatoin">
+                    <h2><i class="fa-solid fa-comment-sms"></i> SMS Notification</h2>
+                    <p class="subData">Receive urgent alerts and login verification codes via text messages.</p>
+                  </div>
+                  <input type="checkbox" name="smsNotify" id="smsNotify">
+                </div>
+                <div class="notiPreferContainer">
+                  <div class="browserNotification">
+                    <h2><i class="fa-solid fa-table-columns"></i> Browser Push Notifications</h2>
+                    <p class="subData">Real-time alerts directly in your browser while you're active.</p>
+                  </div>
+                  <input type="checkbox" name="browserNotify" id="browserNotify">
+                </div>
+              </div>
+              <div class="buttons">
+                <button class="restoreDefault">Restore Default</button>
+                <button class="savePreferences">Save Preferences</button>
+              </div>
+            </div>
+            
+            <div class="DeleteAccount">
+              <div class="deleteAccContainer">
+                  <div class="deleteAcc">
+                    <h2>Delete Account</h2>
+                    <p class="subData">Once you delete your account, all of your records and exams results will be permanently lost.</p>
+                  </div>
+                  <button class="deleteAccountBtn">Delete Permanently</button>
+                </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="../Scripts/showTabs.js"></script>
+  </body>
+</html>
